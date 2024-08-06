@@ -5,6 +5,11 @@ const config: Config = {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      placeholder: ['responsive', 'hover', 'focus'],
+    },
+  },
   plugins: [],
 };
 export default config;

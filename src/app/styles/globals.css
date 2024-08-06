@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 커스텀 스타일 */
+input:focus {
+  outline: none;
+}
+
+.placeholder-left {
+  text-align: left;
+  font-size: 0.875rem; /* Tailwind의 text-sm 크기와 동일 */
+}
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
