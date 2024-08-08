@@ -78,12 +78,12 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center mr-2 ml-2 max-w-full">
-      <div className="w-1/3 mr-5">
+    <div className="flex flex-col sm:flex-row items-center justify-center mr-2 ml-2 max-w-full">
+      <div className="w-1/3 mr-0 sm:mr-3">
         <Image src={'/images/register.png'} alt="register" width={400} height={400} />
       </div>
       <form onSubmit={handleOnSubmit}>
-        <div className="border-none border-gray-400 p-10 w-96 shadow-md rounded-lg ml-5">
+        <div className="border-none border-gray-400 p-10 w-96 shadow-md rounded-lg ml-0 sm:ml-3">
           <h2 className="text-xl font-semibold leading-7 text-gray-900 text-center"> Register </h2>
           <div className="mt-2">
             <label htmlFor="name" className="block w-full text-sm font-medium leading-6 text-gray-900">
@@ -102,7 +102,9 @@ const RegisterForm = () => {
           </div>
           {nameError && <p className="text-xs text-red-600 mt-0">This field is mandatory</p>}
           <div className="mt-2">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="block w-full text-sm font-medium leading-6 text-gray-900">
+              Email
+            </label>
             <div className="mt-2">
               <input
                 type="email"
